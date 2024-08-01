@@ -52,7 +52,6 @@ export default {
   padding: 20px;
 }
 .details {
-  height: 100vh;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
