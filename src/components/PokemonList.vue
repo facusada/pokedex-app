@@ -56,7 +56,7 @@ export default {
 }
 .pokemon-container {
   height: 100vh;
-  gap: 30px;
+  gap: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
