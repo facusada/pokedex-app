@@ -7,7 +7,7 @@
     "dev": "vite --port 4000 --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite preview --port $PORT --host 0.0.0.0"
+    "start": "serve dist"
   },
   "dependencies": {
     "axios": "^1.7.2",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
+    "serve": "^14.2.3",
     "vite": "^5.3.4"
   }
 }
