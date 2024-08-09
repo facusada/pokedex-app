@@ -10,10 +10,15 @@
     "start": "serve dist"
   },
   "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2",
     "axios": "^1.7.2",
     "vue": "^3.4.31",
     "vue-router": "^4.2.0",
-    "vuetify": "^3.7.0-beta.1"
+    "vuetify": "^3.7.0-beta.1",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",

@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import { getPokemonDetails } from '../services/pokemon';
+import { mapGetters } from 'vuex';
 
 export default {
   data() {
@@ -37,10 +37,12 @@ export default {
       pokemon: null,
     };
   },
-  async created() {
-    const id = this.$route.params.id;
-    this.pokemon = await getPokemonDetails(id);
-  }
+  mounted() {
+    this.pokemon = this.selectedPokemon;
+  },
+  computed: {
+   ...mapGetters(['selectedPokemon']),
+  },
 };
 </script>
 

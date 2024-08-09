@@ -26,6 +26,7 @@
 
 <script>
 import { getPokemons } from '../services/pokemon';
+import { mapActions } from 'vuex';
 
 export default {
   data() {
@@ -37,8 +38,10 @@ export default {
     this.pokemons = await getPokemons();
   },
   methods: {
+    ...mapActions(['updatePokemon']),
     selectPokemon(id) {
-      this.$router.push({ name: 'pokemon-details', params: { id } });
+      this.updatePokemon(this.pokemons[id - 1])
+      this.$router.push({ name: 'pokemon-details', params: { id: id}});
     }
   }
 };
