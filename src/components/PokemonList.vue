@@ -48,6 +48,14 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 768px) {
+  .pokemon-container {
+    height: inherit !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+}
 .pokemon-background {
   min-height: 100vh;
   background: linear-gradient(135deg, rgba(255, 203, 5, 0.8), rgba(61, 125, 202, 0.8)) no-repeat center center fixed;
